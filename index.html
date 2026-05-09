@@ -33,18 +33,20 @@
         width: 36px;
       }
 
+      .social-list {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      .social-list > li {
+        display: inline-block;
+      }
+
       /* BIO STYLES */
       .bio-wrapper {
         font-size: 24px;
-      }
-
-      .bio-wrapper::after {
-        visibility: hidden;
-        display: block;
-        font-size: 0;
-        content: " ";
-        clear: both;
-        height: 0;
+        overflow: hidden;
       }
 
       .bio-box {
@@ -80,7 +82,7 @@
     
     <div class="full-hero hero-home">
       <h1>I'm an h1</h1>
-      <ul>
+      <ul class="social-list">
         <li>
           <a href="https://example.com/" class="social-link">Link</a>
         </li>
